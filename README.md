@@ -20,4 +20,4 @@ The site will be running at http://localhost:3000.
 Deployed Version
 You can view the live version of the portfolio at:
 
-https://your-portfolio-link.com
+https://portfolio-five-pied-79.vercel.app/
