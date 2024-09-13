@@ -15,7 +15,7 @@ npm install
 npm run dev
 ```
 
-The site will be running at http://localhost:3000.
+The site will be running at http://localhost:5173.
 
 Deployed Version
 You can view the live version of the portfolio at:
