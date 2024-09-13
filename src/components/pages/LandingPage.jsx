@@ -12,7 +12,7 @@ import ThemeToggle from "./ThemeToggle";
 import ContactInfo from "./Contact";
 
 export default function Portfolio() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   return (
     <div className={`min-h-screen ${isDarkMode ? "dark" : ""}`}>
