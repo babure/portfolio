@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <div className="flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-4">
       <a
-        href="mailto:babu@example.com"
+        href="mailto:babureddys003@gmail.com"
         className="flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200"
       >
         <Mail size={16} className="mr-1" />
