@@ -5,7 +5,7 @@ export default function About() {
         About Me
       </h2>
       <p className="text-gray-600 dark:text-gray-400">
-        I'm a passionate software engineer with 2 years of experience
+        I'm a professional software engineer with 2 years of experience
         specializing in React.js, Spring Boot, SQL, and MongoDB. I thrive on
         creating efficient and user-friendly web applications that solve
         real-world problems. When I'm not coding, you can find me exploring new
