@@ -2,14 +2,7 @@ import { ExternalLink, Github } from "lucide-react";
 
 export default function Projects() {
   const projects = [
-    // {
-    //   title: "E-commerce Platform",
-    //   description:
-    //     "A full-stack e-commerce solution with real-time inventory management.",
-    //   technologies: ["React", "Node.js", "MongoDB"],
-    //   github: "https://github.com/babure",
-    //   live: "",
-    // },
+   
   ];
 
   return (
@@ -19,7 +12,7 @@ export default function Projects() {
       </h2>
       {projects.length === 0 ? (
         <p className="text-gray-600 dark:text-gray-400">
-          No public repo projects, currently working on it.{" "}
+          No public repo projects except this portfolio, currently working on it.{" "}
           <span role="img" aria-label="working">
             👨‍💻
           </span>
