@@ -28,8 +28,8 @@ export default function Portfolio() {
             </div>
             <Header />
             <About />
+            <Skills isDarkMode={isDarkMode} />
             <Experience />
-            <Skills />
             <Projects />
             <Education />
             <Footer />

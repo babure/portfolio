@@ -7,6 +7,9 @@ import javaIcon from "../../assets/java.svg";
 import htmlIcon from "../../assets/html.svg";
 import cssIcon from "../../assets/css.svg";
 import gitIcon from "../../assets/git.svg";
+import dockerIcon from "../../assets/docker.svg";
+import awsIcon from "../../assets/aws.svg";
+import awsDarkIcon from "../../assets/aws-dark.svg";
 const SkillIcon = ({ name, icon }) => (
   <div className="flex flex-col items-center">
     <div className="w-16 h-16 flex items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-full p-3">
@@ -22,7 +25,7 @@ const SkillIcon = ({ name, icon }) => (
   </div>
 );
 
-export default function Skills() {
+export default function Skills({ isDarkMode }) {
   const skills = [
     { name: "React", icon: reactIcon },
     { name: "Spring Boot", icon: springBootIcon },
@@ -33,6 +36,8 @@ export default function Skills() {
     { name: "HTML", icon: htmlIcon },
     { name: "CSS", icon: cssIcon },
     { name: "Git", icon: gitIcon },
+    { name: "Docker", icon: dockerIcon },
+    { name: "AWS", icon: isDarkMode ? awsIcon : awsDarkIcon },
   ];
 
   return (
