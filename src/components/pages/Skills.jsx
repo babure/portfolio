@@ -27,17 +27,17 @@ const SkillIcon = ({ name, icon }) => (
 
 export default function Skills({ isDarkMode }) {
   const skills = [
+    { name: "Java", icon: javaIcon },
     { name: "React", icon: reactIcon },
     { name: "Spring Boot", icon: springBootIcon },
     { name: "MySql", icon: mySqlIcon },
-    { name: "MongoDB", icon: mongoDBIcon },
-    { name: "JavaScript", icon: jsIcon },
-    { name: "Java", icon: javaIcon },
     { name: "HTML", icon: htmlIcon },
     { name: "CSS", icon: cssIcon },
+    { name: "JavaScript", icon: jsIcon },
     { name: "Git", icon: gitIcon },
     { name: "Docker", icon: dockerIcon },
     { name: "AWS", icon: isDarkMode ? awsIcon : awsDarkIcon },
+    { name: "MongoDB", icon: mongoDBIcon },
   ];
 
   return (
