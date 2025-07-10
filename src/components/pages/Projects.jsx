@@ -1,9 +1,8 @@
 import { ExternalLink, Github } from "lucide-react";
+import AnimatedCodingIcon from "./AnimatedCodingIcon";
 
 export default function Projects() {
-  const projects = [
-   
-  ];
+  const projects = [];
 
   return (
     <section className="space-y-4">
@@ -11,11 +10,10 @@ export default function Projects() {
         Projects
       </h2>
       {projects.length === 0 ? (
-        <p className="text-gray-600 dark:text-gray-400">
-          No public repo projects except this portfolio, currently working on it.{" "}
-          <span role="img" aria-label="working">
-            👨‍💻
-          </span>
+        <p className="text-gray-600 dark:text-gray-400 flex items-center">
+          No public repo projects except this portfolio, currently working on
+          it.
+          <AnimatedCodingIcon />
         </p>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
