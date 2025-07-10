@@ -10,6 +10,7 @@ import Education from "./Education";
 import Footer from "./Footer";
 import ThemeToggle from "./ThemeToggle";
 import ContactInfo from "./Contact";
+import ResumeButton from "./ResumeButton";
 
 export default function Portfolio() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -29,6 +30,7 @@ export default function Portfolio() {
             <Header />
             <About />
             <Skills isDarkMode={isDarkMode} />
+            <ResumeButton />
             <Experience />
             <Projects />
             <Education />
