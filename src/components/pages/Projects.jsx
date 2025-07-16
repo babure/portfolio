@@ -2,18 +2,28 @@ import { ExternalLink, Github } from "lucide-react";
 import AnimatedCodingIcon from "./AnimatedCodingIcon";
 
 export default function Projects() {
-  const projects = [];
+  const projects = [
+    {
+      title: "Swimyatra",
+      description:
+        "A Landing Page for SwimYatra, a platform for booking community based swimming classes.",
+      github: "https://github.com/babure/swimyatra",
+      live: "https://swimyatra.vercel.app",
+      technologies: ["React", "TailwindCSS", "Vercel"],
+      preview: "https://swimyatra.vercel.app/og-image.jpg",
+    },
+  ];
 
   return (
     <section className="space-y-4">
-      <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
+      <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 flex items-center gap-2">
         Projects
+        <AnimatedCodingIcon />
       </h2>
       {projects.length === 0 ? (
         <p className="text-gray-600 dark:text-gray-400 flex items-center">
           No public repo projects except this portfolio, currently working on
           it.
-          <AnimatedCodingIcon />
         </p>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -25,9 +35,16 @@ export default function Projects() {
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {project.title}
               </h3>
-              <p className="mt-2 text-gray-600 dark:text-gray-400">
-                {project.description}
-              </p>
+              <div className="flex flex-col gap-4 mt-2">
+                <img
+                  src={project.preview}
+                  alt={`${project.title} preview`}
+                  className="w-full h-40 object-cover rounded border border-gray-200 dark:border-gray-700"
+                />
+                <p className="text-gray-600 dark:text-gray-400">
+                  {project.description}
+                </p>
+              </div>
               <div className="mt-4 flex flex-wrap gap-2">
                 {project.technologies.map((tech, i) => (
                   <span
@@ -49,6 +66,7 @@ export default function Projects() {
                 </a>
                 <a
                   href={project.live}
+                  target="/"
                   className="flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200"
                 >
                   <ExternalLink size={16} className="mr-1" />
