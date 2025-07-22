@@ -17,7 +17,7 @@ export default function About() {
         I’m a software engineer who enjoys building full-stack web applications, everything from clean UI's to scalable backend services.
       </p>
       <p className="text-gray-600 dark:text-gray-400">
-        I don’t chase hobbies; I just live in the moment, code when inspiration hits, and unwind with some good anime.
+        I don’t chase hobbies — I live in the moment, find joy in solving real-world problems with code, and unwind with some good anime.
       </p>
     </section>
   );
