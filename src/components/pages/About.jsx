@@ -14,9 +14,8 @@ export default function About() {
         About Me
       </h2>
       <p className="text-gray-600 dark:text-gray-400">
-        I'm a software engineer with {totalYears} years of experience in
-        React.js, Spring Boot, SQL, and MongoDB. I enjoy creating efficient web
-        applications and exploring new technologies.
+        I’m a software engineer who enjoys building full-stack web applications, everything from clean UIs to scalable backend services.
+        I don’t chase hobbies; I just live in the moment, code when inspiration hits, and unwind with some good anime.
       </p>
     </section>
   );
