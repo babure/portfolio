@@ -6,7 +6,7 @@ export default function Projects() {
     {
       title: "Swimyatra",
       description:
-        "A Landing Page for SwimYatra, a platform for booking community based swimming classes.",
+        "A landing Page for SwimYatra, a platform for booking community-based swimming classes.",
       github: "https://github.com/babure/swimyatra",
       live: "https://swimyatra.vercel.app",
       technologies: ["React", "TailwindCSS", "Vercel"],

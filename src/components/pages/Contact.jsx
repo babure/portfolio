@@ -16,7 +16,7 @@ export default function Contact() {
       </div>
       <div className="flex items-center text-gray-600 dark:text-gray-400">
         <MapPin size={16} className="mr-1" />
-        <span className="text-sm">Banglore, KA, IN</span>
+        <span className="text-sm">Bangalore, KA, IN</span>
       </div>
     </div>
   );
