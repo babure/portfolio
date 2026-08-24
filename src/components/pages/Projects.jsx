@@ -3,15 +3,15 @@ import AnimatedCodingIcon from "./AnimatedCodingIcon";
 
 export default function Projects() {
   const projects = [
-    {
-      title: "Swimyatra",
-      description:
-        "A landing Page for SwimYatra, a platform for booking community-based swimming classes.",
-      github: "https://github.com/babure/swimyatra",
-      live: "https://swimyatra.vercel.app",
-      technologies: ["React", "TailwindCSS", "Vercel"],
-      preview: "https://swimyatra.vercel.app/og-image.jpg",
-    },
+    // {
+    //   title: "Swimyatra",
+    //   description:
+    //     "A landing Page for SwimYatra, a platform for booking community-based swimming classes.",
+    //   github: "https://github.com/babure/swimyatra",
+    //   live: "https://swimyatra.vercel.app",
+    //   technologies: ["React", "TailwindCSS", "Vercel"],
+    //   preview: "https://swimyatra.vercel.app/og-image.jpg",
+    // },
   ];
 
   return (
