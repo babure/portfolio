@@ -32,7 +32,7 @@ export default function Portfolio() {
             <Skills isDarkMode={isDarkMode} />
             <ResumeButton />
             <Experience />
-            <Projects />
+            <Projects isDarkMode={isDarkMode} />
             <Education />
             <Footer />
           </div>
