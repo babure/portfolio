@@ -1,23 +1,20 @@
-import { calculateDuration, experiences } from "./Experience";
-
 export default function About() {
-  const totalExperience = experiences.reduce((acc, exp) => {
-    const { totalDays } = calculateDuration(exp.startDate, exp.endDate);
-    return acc + totalDays;
-  }, 0);
-
-  const totalYears = (totalExperience / 365).toFixed(1);
-
   return (
     <section className="space-y-4">
       <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
         About Me
       </h2>
       <p className="text-gray-600 dark:text-gray-400">
-        I’m a software engineer who enjoys building full-stack web applications, everything from clean UI's to scalable backend services.
+        Software Engineer with 4 years of experience building scalable backend
+        systems and secure REST APIs in both Java (Spring Boot) and Python
+        (FastAPI), with React.js on the front end. Delivered a real-time voice
+        AI platform on LiveKit and Deepgram, and a Spring Boot test automation
+        platform with JWT-based authentication and role-based access control.
       </p>
       <p className="text-gray-600 dark:text-gray-400">
-        I don’t chase hobbies — I live in the moment, find joy in solving real-world problems with code, and unwind with some good anime.
+        I use AI-native development tools (Cursor, Claude, MCP) to accelerate
+        feature delivery while keeping codebases clean, testable, and
+        maintainable — and unwind with some good anime.
       </p>
     </section>
   );

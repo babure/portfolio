@@ -1,14 +1,14 @@
 import { Building2, Calendar } from "lucide-react";
-import { differenceInDays, format } from "date-fns"; // You'll need date-fns library to calculate days difference
+import { differenceInDays, format } from "date-fns";
 
 export const calculateDuration = (startDate, endDate) => {
   const start = new Date(startDate);
-  const end = endDate ? new Date(endDate) : new Date(); // If no end date, use current date
+  const end = endDate ? new Date(endDate) : new Date();
   const totalDays = differenceInDays(end, start);
   const years = totalDays / 365;
   return {
     totalDays,
-    formattedYears: years.toFixed(1), // Format to one decimal place
+    formattedYears: years.toFixed(1),
   };
 };
 
@@ -16,13 +16,13 @@ export const experiences = [
   {
     title: "Software Engineer",
     company: "Avekshaa Technologies",
-    startDate: "2022-10-06", // YYYY-MM-DD format
-    endDate: null, // Null if currently working
+    startDate: "2022-10-01",
+    endDate: null,
     description: [
-      "Migration of a legacy monolithic application to a microservices architecture, improving scalability and maintainability.",
-      "Optimized REST API performance, reducing response time from seconds to milliseconds through query optimization and caching.",
-      "Designed and implemented RBAC for 3+ user roles across frontend and backend modules, preventing unauthorized access and improving security compliance.",
-      "Containerized 10+ microservices using Docker, reducing deployment time by 50% and improving CI/CD efficiency.",
+      "Built Zenovia end-to-end with Python/FastAPI — real-time voice AI interviews on LiveKit and Deepgram, OpenRouter LLM reports, and Razorpay billing across 4+ plan tiers.",
+      "Developed HuLA, a low-code test automation platform: 20+ Spring Boot REST APIs, JWT/RBAC for 3 roles, and 15+ React screens with an AI agent that turns plain-English prompts into executable test scripts.",
+      "Delivered DEM digital experience monitoring covering ~50 applications and 50+ servers, with synthetic checks, frontend agents, and AI-assisted RCA that cut MTTR by ~40%.",
+      "Collaborated with product, QA, and DevOps in Agile/Scrum across 100+ sprint cycles to plan, prioritize, and ship features.",
     ],
   },
 ];
@@ -35,7 +35,7 @@ export default function Experience() {
       </h2>
       <div className="space-y-8">
         {experiences.map((exp, index) => {
-          const { totalDays, formattedYears } = calculateDuration(
+          const { formattedYears } = calculateDuration(
             exp.startDate,
             exp.endDate
           );

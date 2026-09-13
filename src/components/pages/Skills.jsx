@@ -4,12 +4,19 @@ import mySqlIcon from "../../assets/mysql.svg";
 import mongoDBIcon from "../../assets/mongodb.svg";
 import jsIcon from "../../assets/js.svg";
 import javaIcon from "../../assets/java.svg";
+import pythonIcon from "../../assets/python.svg";
+import fastapiIcon from "../../assets/fastapi.svg";
+import postgresqlIcon from "../../assets/postgresql.svg";
+import redisIcon from "../../assets/redis.svg";
 import htmlIcon from "../../assets/html.svg";
 import cssIcon from "../../assets/css.svg";
 import gitIcon from "../../assets/git.svg";
 import dockerIcon from "../../assets/docker.svg";
+import kubernetesIcon from "../../assets/kubernetes.svg";
+import livekitIcon from "../../assets/livekit.svg";
 import awsIcon from "../../assets/aws.svg";
 import awsDarkIcon from "../../assets/aws-dark.svg";
+
 const SkillIcon = ({ name, icon }) => (
   <div className="flex flex-col items-center">
     <div className="w-16 h-16 flex items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-full p-3">
@@ -28,16 +35,22 @@ const SkillIcon = ({ name, icon }) => (
 export default function Skills({ isDarkMode }) {
   const skills = [
     { name: "Java", icon: javaIcon },
+    { name: "Python", icon: pythonIcon },
+    { name: "JavaScript", icon: jsIcon },
     { name: "React", icon: reactIcon },
     { name: "Spring Boot", icon: springBootIcon },
-    { name: "MySql", icon: mySqlIcon },
+    { name: "FastAPI", icon: fastapiIcon },
+    { name: "PostgreSQL", icon: postgresqlIcon },
+    { name: "MySQL", icon: mySqlIcon },
+    { name: "MongoDB", icon: mongoDBIcon },
+    { name: "Redis", icon: redisIcon },
+    { name: "LiveKit", icon: livekitIcon },
+    { name: "Docker", icon: dockerIcon },
+    { name: "Kubernetes", icon: kubernetesIcon },
+    { name: "AWS", icon: isDarkMode ? awsIcon : awsDarkIcon },
+    { name: "Git", icon: gitIcon },
     { name: "HTML", icon: htmlIcon },
     { name: "CSS", icon: cssIcon },
-    { name: "JavaScript", icon: jsIcon },
-    { name: "Git", icon: gitIcon },
-    { name: "Docker", icon: dockerIcon },
-    { name: "AWS", icon: isDarkMode ? awsIcon : awsDarkIcon },
-    { name: "MongoDB", icon: mongoDBIcon },
   ];
 
   return (
